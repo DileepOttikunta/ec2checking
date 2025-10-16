@@ -4,8 +4,7 @@ const PORT = 3000;
 
 // Simple API route
 app.get('/', (req, res) => {
-  res.send('Hello Dileep! 🚀 Your Node.js app is live!');
-  res.send('Now Working Fine ')
+  res.send('Hello Dileep! 🚀 ');
 });
 
 // Run server
