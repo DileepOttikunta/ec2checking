@@ -7,7 +7,6 @@ app.get('/', (req, res) => {
   res.send('Hello Dileep! 🚀 ');
 });
 
-// Run server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
