@@ -4,8 +4,8 @@ const PORT = 3000;
 
 // Simple API route
 app.get('/', (req, res) => {
-  res.send('Hello Dileep! 🚀 ');
-  res.send('ITs working UPto Date Code ');
+  res.send('Hello Dileep! 🚀 | 1234567890 ');
+
 });
 
 app.listen(PORT, () => {
