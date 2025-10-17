@@ -2,9 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Simple API route
 app.get('/', (req, res) => {
-  res.send('Hello Dileep! 🚀 ');
+  res.sendFile(path.join(__dirname, 'write.html'));
 });
 
 app.listen(PORT, () => {
