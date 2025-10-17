@@ -3,7 +3,8 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'write.html'));
+  res.send('Hello Dileep! 🚀 | 1234567890 ');
+
 });
 
 app.listen(PORT, () => {
