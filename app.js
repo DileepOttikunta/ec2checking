@@ -6,7 +6,7 @@ const cors = require('cors');
 const PORT = 3000;
 
 app.use(cors({
-  origin: 'http://localhost:4200',  // Allow your Angular app
+  origin: 'https://courageous-macaron-f7063f.netlify.app/',  // Allow your Angular app
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type']
 }));
