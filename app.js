@@ -22,7 +22,6 @@ const db = mysql.createConnection({
   }
 });
 
-// Connect to MySQL (TiDB)
 db.connect(err => {
   if (err) {
     console.error('❌ Database connection failed:', err);
