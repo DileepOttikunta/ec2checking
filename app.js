@@ -2,8 +2,14 @@ const express = require('express');
 const path = require('path');
 const mysql = require('mysql2');
 const app = express();
+const cors = require('cors'); 
 const PORT = 3000;
 
+app.use(cors({
+  origin: 'http://localhost:4200',  // Allow your Angular app
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+}));
 // MySQL (TiDB Cloud) connection
 const db = mysql.createConnection({
   host: 'gateway01.us-east-1.prod.aws.tidbcloud.com',
@@ -25,10 +31,6 @@ db.connect(err => {
   }
 });
 
-// Serve HTML file
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'write.html'));
-});
 
 // API to get data from database
 app.get('/users', (req, res) => {
